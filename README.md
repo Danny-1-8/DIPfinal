@@ -7,7 +7,9 @@ third.py，对应单色恢复算法;
 
 **代码引用与参考声明：**
 在mydehaze.py中，对于获取暗通道的函数与gfilter函数的定义，我参考了https://github.com/He-Zhang/image_dehaze    （我自己一开始先用numpy实现了一个暗通道函数，但是跑起来太耗时间了，不如参考版本的；对于gfilter函数，何恺明文章的图片里有源码，所以我就没有做过多改动：
-![Uploading 332698199-d425c53f-5650-471e-8a4e-4ecc3ccdb2cf.png…]()
+<img width="260" alt="332698199-d425c53f-5650-471e-8a4e-4ecc3ccdb2cf" src="https://github.com/Danny-1-8/DIPfinal/assets/127832063/e7bce286-1483-46b0-b94f-d26159bacbdf">
+
+
 
 ）
 
