@@ -90,8 +90,6 @@ def start(filepath,outputfile):
         transm_map = 1 - 0.95*tx   
         #在何恺明的原文里使用的是Soft Matting来对map进行滤波，但我实在看不懂原文是怎么实现的；
         #在网上调研后发现大多数人在复现代码时都采用的是guided filter，简单且高效，所以我也采用这种方法
-        #其中，参数r选取为20，e选取为10-4，这两参数的选取我参考的是https://github.com/He-Zhang/image_dehaze/blob/master/dehaze.py
-        #因为这两参数的调整在自己搜集的五张图像上的去雾效果差别体现的不明显，所以我就固定为这个值了
         transm_map = gfilter(transm_map, guide_img, 20, 0.0001) 
         res = (img-atmos_light)/np.expand_dims(np.where(transm_map>0.26,transm_map,0.26),axis=2) +atmos_light 
         et = time.time()
