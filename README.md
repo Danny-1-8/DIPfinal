@@ -13,7 +13,7 @@ third.py，对应单色恢复算法;
 
 ）
 
-在third.py中，关于白平衡的定义，我参考了  https://www.cnblogs.com/pear-linzhu/p/12453985.html
+在third.py中，因为不清楚白平衡的定义，我参考了  https://www.cnblogs.com/pear-linzhu/p/12453985.html
 
 算法跑出来的所有去雾结果我都放在百度云盘中了；
 
